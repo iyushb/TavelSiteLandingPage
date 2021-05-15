@@ -1,0 +1,729 @@
+
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Vollkorn', serif;
+    list-style-type: none;
+     text-decoration: none;
+     box-sizing: border-box;
+     outline: none;
+     /* border: 1px solid red; */
+
+ }
+
+ html {
+     font-size: 62.5%;
+     }
+
+ :root {
+     --primary-color: #2b81e4;
+     --secondary-color: #eee;
+     --white-color: #fff;
+     --grey-color: #555;
+     --light-grey-color: #777;
+ }
+
+ .center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .container {
+
+     background-color: var(--secondary-color);
+     margin: 3.5rem;
+     overflow: hidden;
+     box-shadow: 0 0.3rem 1.5rem var(--grey-color);
+
+ }
+
+ /* END OF COMMON STYLES */
+
+ .nav-open-img {
+     width: 4rem;
+     height: 4rem;
+     position: fixed;
+     z-index: 200;
+     top: 5rem;
+     left: 5rem;
+     cursor: pointer;
+
+ }
+
+ .navbar-wrapper {
+     visibility: hidden;
+     width: 100vw;
+     height: 100vh;
+     position: fixed;
+     background-color: rgba(255, 255, 255, 0.8);
+     top: 0;
+     right: 0;
+     z-index: 300;
+     padding: 3.5rem 3.5rem 3.5rem 4.55rem;
+
+ }
+
+ .navbar {
+     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .3)), url(../images/navbar-bg.jpg) center no-repeat;
+     background-size: cover;
+ }
+
+
+ .close-navbar-button {
+     position: absolute;
+     top: 5rem;
+     right: 5rem;
+     z-index: 300;
+     cursor: pointer;
+ }
+
+ .nav-list {
+
+     height: 88.5vh;
+     width: 100%;
+     display: flex;
+ }
+
+ .nav-link {
+     font-size: 3rem;
+     color: white;
+     font-weight: 700;
+     text-transform: uppercase;
+     width: 100%;
+     opacity: .8;
+     transition: opacity .8s, color .3s;
+ }
+
+ .nav-link:hover {
+     opacity: 1;
+     color: rgba(0, 0, 0, 0.9);
+ }
+
+ .nav-list a:nth-child(1) {
+     background-color: #315d60;
+
+
+ }
+
+ .nav-list a:nth-child(2) {
+     background-color: #37766e;
+
+
+ }
+
+ .nav-list a:nth-child(3) {
+     background-color: #5b9a7c;
+
+
+ }
+
+ .nav-list a:nth-child(4) {
+     background-color: #79a76e;
+
+
+ }
+
+ .nav-list a:nth-child(5) {
+     background-color: #DADB91;
+ }
+ /*end of navigation bar */
+
+
+ /* HEADER */
+
+ .header {
+     perspective: 100rem;
+     width: 100%;
+     height: calc(100vh - 7rem);
+     background: linear-gradient(to left, rgba(18, 113, 255, 0.1), rgba(18, 113, 255, 0.3)),
+         url(../images/header-bg.jpg) no-repeat center;
+     background-size: cover;
+
+ }
+
+ .header-text {
+     text-transform: uppercase;
+     text-align: center;
+     letter-spacing: 0.1rem;
+
+ }
+
+ .heading {
+     font-size: 5rem;
+     color: var(--white-color);
+     text-shadow: 0 0.3rem 0.5rem var(--grey-color);
+ }
+
+ .header-paragraph {
+     font-size: 1.4rem;
+     font-weight: 500;
+     max-width: 45rem;
+     color: var(--secondary-color);
+     margin: 0 auto;
+ }
+
+ .logo {
+     align-self: flex-start;
+     margin-top: 3rem;
+
+ }
+
+ .logo span {
+     display: inline-block;
+     font-size: 1.5rem;
+     font-weight: 900;
+     color: var(--primary-color);
+     background-color: var(--white-color);
+     width: 2rem;
+     height: 2rem;
+     border-radius: 50%;
+     text-align: center;
+ }
+
+ /* Logo Animation start */
+
+ .logo span:nth-child(1) {
+
+     animation-name: drop-letters;
+     animation-duration: 5s;
+     animation-delay: 0.1s;
+     animation-iteration-count: infinite;
+ }
+
+ .logo span:nth-child(2) {
+
+     animation-name: drop-letters;
+     animation-duration: 5s;
+     animation-delay: 0.2s;
+     animation-iteration-count: infinite;
+ }
+
+ .logo span:nth-child(3) {
+
+     animation-name: drop-letters;
+     animation-duration: 5s;
+     animation-delay: 0.3s;
+     animation-iteration-count: infinite;
+ }
+
+ .logo span:nth-child(4) {
+
+     animation-name: drop-letters;
+     animation-duration: 5s;
+     animation-delay: 0.4s;
+     animation-iteration-count: infinite;
+ }
+
+ .logo span:nth-child(5) {
+
+     animation-name: drop-letters;
+     animation-duration: 5s;
+     animation-delay: 0.5s;
+     animation-iteration-count: infinite;
+ }
+
+ .logo span:nth-child(6) {
+
+     animation-name: drop-letters;
+     animation-duration: 5s;
+     animation-delay: 0.6s;
+     animation-iteration-count: infinite;
+ }
+
+ .logo span:nth-child(7) {
+
+     animation-name: drop-letters;
+     animation-duration: 5s;
+     animation-delay: 0.7s;
+     animation-iteration-count: infinite;
+ }
+
+ @keyframes drop-letters {
+     0% {
+         transform: translateY(0);
+     }
+
+     10% {
+         transform: translateY(0);
+     }
+
+     15% {
+         transform: translateY(-20px);
+     }
+
+     20% {
+         transform: translateY(0);
+     }
+
+     100% {
+         transform: translateY(0);
+     }
+
+ }
+
+ /* logo animation end */
+
+ /* air balloon animation start */
+ .header-image {
+     animation-name: balloon-animation;
+     animation-duration: 200s;
+     animation-delay: 0.1s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-out;
+
+ }
+
+ @keyframes balloon-animation {
+     0% {
+         transform: translateZ(0);
+         opacity: 1;
+     }
+
+     20% {
+         transform: translateZ(-200rem);
+         opacity: 0.9;
+     }
+
+     40% {
+         transform: translateZ(-500rem) translateX(150rem);
+         opacity: 0.8;
+     }
+
+     70% {
+         transform: translateZ(-1500rem) translateX(800rem);
+         opacity: 0.6;
+     }
+
+     80% {
+         transform: translateZ(-50rem) translateX(100rem);
+         opacity: 0.8;
+     }
+
+     90% {
+         transform: translateZ(-50rem) translateX(50rem);
+         opacity: 0.9;
+     }
+
+     100% {
+         transform: translateZ(0rem) translateX(0);
+
+     }
+
+ }
+
+ /* air balloon animation end */
+
+ /* END OF HEADER */
+
+ /* POPULAR TOURS Start*/
+ .popular-tours {
+     padding: 5rem 0 10rem 0;
+ }
+
+ .popular-tours-heading {
+     font-size: 5rem;
+     color: var(--primary-color);
+     text-align: center;
+     text-shadow: 0 0.1rem 0.2rem var(--primary-color);
+ }
+
+ /* COMMON CARD STYLES */
+ .cards-wrapper {
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ .card {
+     width: 35rem;
+     margin-top: 4rem;
+     position: relative;
+
+     perspective: 150rem;
+
+
+
+ }
+
+ /* FRONT SIDE */
+ .card-image {
+     width: 100%;
+     border-radius: 0.3rem .3rem 0 0;
+     opacity: 0.9;
+ }
+
+ .front-side {
+     position: relative;
+     z-index: 2;
+     background-color: var(--white-color);
+     opacity: 0.9;
+     transition: opacity 0.5s,
+         transform 0.5s,
+         box-shadow 0.5s;
+ }
+
+ .tour-name {
+     position: absolute;
+     top: 18rem;
+     right: 3rem;
+     color: var(--white-color);
+     text-shadow: 0 0.1rem 0.3rem black;
+     font-size: 2rem;
+
+ }
+
+ .card-list {
+     text-align: center;
+     margin-top: 2rem;
+
+     width: 75%;
+     margin: 0 auto;
+     padding: 3rem 0 3rem 0;
+ }
+
+
+ .card-list-item {
+     margin-top: 1.9rem;
+     border-bottom: 1px solid var(--primary-color);
+     font-size: 1.5rem;
+     font-weight: bold;
+     color: var(--light-grey-color);
+
+ }
+
+ /* BACK SIDE OF CARD */
+ .back-side {
+     position: absolute;
+     top: 0;
+     background-color:
+         var(--primary-color);
+     width: 100%;
+     height: 100%;
+     border-radius: .3rem .3rem 0 0;
+     box-shadow: 0 2rem 4rem #777;
+     flex-direction: column;
+     transform: translateZ(-5rem) translateX(2rem);
+     opacity: 0.5;
+     transition: translateZ 0.4s,
+         translateX 0.4s;
+ }
+
+ .tour-price {
+     font-size: 5rem;
+     color: var(--white-color);
+     margin-bottom: 2rem;
+
+ }
+
+ .card-button {
+     border: none;
+     font-size: 2rem;
+
+     padding: .5rem 1.5rem;
+     border-radius: 2rem;
+     cursor: pointer;
+     background-color:
+         rgba(255, 255, 255, 0.945);
+     color:
+         var(--primary-color);
+     text-transform: uppercase;
+ }
+
+
+ .navigation-button {
+     position: absolute;
+     top: 0.5rem;
+     left: 0.5rem;
+     border: none;
+     background-color:
+         rgba(255, 255, 255, 0.945);
+     color:
+         var(--light-grey-color);
+     padding: 0.5rem;
+     border-radius: 0.3rem;
+     text-transform: uppercase;
+     letter-spacing: 0.2rem;
+     cursor: pointer;
+
+
+ }
+
+ /* cards Changing sides */
+ .change>.front-side {
+     z-index: 0;
+     transform: translateX(2rem) translateZ(-5rem);
+     box-shadow: 0 2rem 4rem #777;
+     opacity: 1;
+ }
+
+ .change>.back-side {
+
+     box-shadow: 0 .5rem 2rem #aaa;
+     transform: translateZ(0) translateX(0);
+     opacity: 1;
+ }
+
+ /* End of cards changing sides */
+
+ /* END OF POPULAR TOURS */
+
+
+ /* Stories started */
+ .stories {
+     padding: 10rem 0;
+     position: relative;
+
+ }
+
+ .video-container {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     opacity: 0.6;
+
+ }
+
+ .bg-video {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+
+ }
+
+ .stories-wrapper {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+
+ }
+
+ .story-bg {
+     background-color:
+         rgba(245, 245, 245, 0.822);
+     padding: 5rem;
+     margin: 5rem;
+     width: 70%;
+     box-shadow:
+         0rem 2rem 5rem rgba(51, 51, 51, 0.6);
+     transform: skewX(20deg);
+ }
+
+ .story {
+     transform: skewX(-20deg);
+     display: flex;
+ }
+
+ .story-image {
+     width: 20rem;
+     height: 20rem;
+     border-radius: 50%;
+     object-fit: cover;
+     margin-right: 5rem;
+ }
+
+ .story-text {
+     letter-spacing: .1rem;
+ }
+
+ .story-heading {
+     font-size: 2rem;
+     text-transform: uppercase;
+     color: var(--grey-color);
+     margin-bottom: 1rem;
+ }
+
+ .story-paragraph {
+     font-size: 1.8rem;
+     color: var(--light-grey-color)
+ }
+
+ .story-paragraph::first-letter {
+     margin-left: 2rem;
+ }
+
+
+ /*end of stories section  */
+
+ /* Contact Section */
+ .contact {
+     padding: 8rem 0 8rem 0;
+     text-align: center;
+     background:
+         url(../images/contact-us-bg.png) center no-repeat;
+     background-size: cover;
+     animation: contact-bg 35s infinite;
+
+ }
+
+ .contact-heading {
+     font-size: 6rem;
+     color: var(--white-color);
+     text-transform: uppercasff5733
+ }
+
+ .contact-form {
+     width: 70rem;
+     height: 50rem;
+     background-color: var(--white-color);
+     margin: 0 auto;
+     flex-direction: column;
+     border-radius: 0.5rem;
+     box-shadow: 0 .2rem 4rem #000;
+     padding: 5rem;
+ }
+
+ .input-group {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     position: relative;
+     margin: 1rem 0;
+
+
+ }
+
+ .input-groups {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .input-groups .input-group {
+     width: 48.5%;
+ }
+
+ .input-group input,
+ .input-group textarea {
+     padding: 3rem 1rem 1rem 1rem;
+     background-color:
+
+         var(--secondary-color);
+
+     border: 0.1rem solid var(--secondary-color);
+
+     border-radius: 0.5rem;
+
+     color:
+         var(--light-grey-color);
+
+     letter-spacing: 0.1rem;
+
+     font-size: 1.4rem;
+     transition: border 0.4s;
+ }
+
+ .input-group input:focus,
+ .input-group textarea:focus {
+     border: 0.1rem solid #ccc;
+ }
+
+ .input-group label {
+     position: absolute;
+     top: 1rem;
+     left: 1rem;
+     text-transform: uppercase;
+     letter-spacing: 0.1rem;
+     color: var(--grey-color);
+ }
+
+ .form-btn {
+     width: 100%;
+     background-color:
+         var(--light-grey-color);
+     border: none;
+     color: var(--white-color);
+     padding: 1rem;
+     font-size: 1.6rem;
+     letter-spacing: 0.1rem;
+     margin-top: 1rem;
+     cursor: pointer;
+     transition: background-color 0.3s;
+     border-radius: 0.2rem;
+ }
+
+ .form-btn:hover {
+     background-color:
+         var(--grey-color);
+ }
+
+ .input-group textarea {
+     max-height: 15rem;
+     min-height: 8rem;
+     max-width: 100%;
+     min-width: 50%;
+ }
+
+ @keyframes contact-bg {
+     0% {
+         background-color: #6696ba;
+     }
+
+     35% {
+         background-color: #e2e38b;
+     }
+
+     60% {
+         background-color: #7e4b68
+     }
+
+     70% {
+         background-color: #e7a553;
+     }
+
+     100% {
+         background-color: #6696ba;
+     }
+ }
+
+
+
+ /* End of Contact Section */
+
+ /* footer section starter */
+ .footer {
+     background-color: var(--grey-color);
+ }
+
+ .footer-list {
+     display: flex;
+     justify-content: space-between;
+     width: 50%;
+     margin: auto;
+     padding-top: 5rem;
+     margin-bottom: 4rem;
+
+ }
+
+ .footer-list li a {
+     color: white;
+     font-size: 1.3rem;
+     letter-spacing: 0.3rem;
+     background-color: var(--grey-color);
+     transition: transform 5s;
+     padding: 0.3rem 0.3rem;
+     cursor: pointer;
+ }
+
+ .footer-list li:hover {
+     box-shadow: 0 2rem 4rem black;
+     transform: rotate(-10deg);
+ }
+
+ .footer-note {
+     color: rgba(0, 0, 0, 0.253);
+     text-align: center;
+     padding-bottom: 2rem;
+ }
+
+ /* footer section end */
+
+ @media (max-width:1250px) {
+     .logo {
+         margin-right: 3rem;
+
+
+     }
+ }
